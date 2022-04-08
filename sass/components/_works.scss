@@ -1,0 +1,51 @@
+.works {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.works__list {
+    @extend %list;
+
+    display: flex;
+}
+
+.works__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.works__images {
+    display: block;
+    width: 100%;
+}
+
+.works__title {
+    @extend %title;
+   
+}
+
+.works__description {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 70px;
+    background-color: $works-list-overlay;
+}
+
+.works__subtitle {
+    @extend %subtitle;
+
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    color: $primary-white-color;
+    text-align: center;
+}

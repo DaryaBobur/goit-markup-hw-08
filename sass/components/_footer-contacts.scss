@@ -1,0 +1,35 @@
+.footer-contacts {
+    margin-right: 70px;
+    min-width: 231px;
+    color: $primary-white-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    &__address {
+        margin-bottom: 9px;
+    }
+
+    &__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+}
+
+.footer-contacts__list {
+    @extend %list;
+}
+
+.footer-contacts__link {
+    color: $contacts-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition: color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+}
+}

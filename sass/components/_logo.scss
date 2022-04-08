@@ -1,0 +1,39 @@
+.logo__accent,
+.logo__name {
+    color: $accent-color;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    transition: color 250ms $cubic;
+}
+
+.logo__accent {
+ &:hover, 
+ &:focus {
+    color: $logo-color;
+ } 
+}
+
+.logo__name {
+    color: $logo-color;
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+}
+}
+
+.logo {
+   @extend %link
+}
+
+.logo--footer {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.logo__name--footer {
+    color: $primary-white-color;
+}
