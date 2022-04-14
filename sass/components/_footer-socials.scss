@@ -1,17 +1,21 @@
 .footer-socials__list {
     @extend %list;
     @extend %flex;
-}
 
-
-
-.footer-socials__item {
-    margin-right: 93px;
-
-&:not(:last-child) {
-  margin-right: 10px;
+    @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
     }
 }
+
+
+
+// .footer-socials__item {
+//     margin-right: 93px;
+
+// &:not(:last-child) {
+//   margin-right: 10px;
+//     }
+// }
 
 .footer-socials__link {
     @extend %flex;

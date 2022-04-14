@@ -1,19 +1,25 @@
 .contacts {
 @extend %list;
-  display: flex;
+  // display: flex;
   margin-left: auto;
 
 &__item:not(:last-child) {
   margin-right: 50px;
 }
+
+@media screen and (max-width: 767px) {
+  display: none;
+
+}
+
 }
 
 
 .contacts__link {
   @extend %header-link;
 
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 

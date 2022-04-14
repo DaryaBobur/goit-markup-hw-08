@@ -11,18 +11,22 @@
 // Кнопка подписки в футере
 .form-footer__button {
     @extend %button;
+    @extend %flex;
+    
+    padding: 10px 28px 10px 29px;
 
     &:hover,
     &:focus {
         background-color: $bgc-btn;
     }
+
+    @media screen and (min-width: 480px) {
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
 }
 
-.form-footer__button {
-    @extend %flex;
-
-    padding: 10px 28px 10px 29px;
-}
 
 .form-footer__icon {
     margin-left: 10px;
@@ -64,4 +68,28 @@
     &:focus {
         fill: $accent-color;
     }
+}
+
+.menu-button {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+     &.is-open .menu-button__icon-cross {
+     display: block;
+    }
+
+    &.is-open .menu-button__icon-menu {
+        display: none;
+    }
+}
+
+.menu-button__icon-cross {
+    display: none;
 }

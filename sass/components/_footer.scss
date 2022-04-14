@@ -4,9 +4,15 @@
 
     background-color: $color-bg;
 
-    &__container {
-        display: flex;
-        align-items: baseline;
-    }
+    // &__container {
+    //     display: flex;
+    //     align-items: baseline;
+    // }
 }
 
+.footer__container {
+
+    @media screen and (min-width: 480px) {
+        text-align: center; 
+    }
+}

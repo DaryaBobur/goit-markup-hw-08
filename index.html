@@ -19,11 +19,18 @@
   <body>
     <!-- Шапка сайта -->
     <header class="page-header">
-      <div class="container header-nav">
+      <div class="container">
       <nav class="header-nav">
         <a class="logo" href="./index.html"
           ><span class="logo__accent">Web</span
           ><span class="logo__name">Studio</span></a>
+
+            <button type="button" class="menu-button" data-menu-button>
+              <svg class="menu-button__icons" width="40" height="40">
+                <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
+                <use class="menu-button__icon-cross" href="./images/icons.svg#close-menu"></use>
+              </svg>
+            </button>
 
         <ul class="site-nav">
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
@@ -44,7 +51,10 @@
         </li>
       </ul>
       </div>
+
+      
     </header>
+
     <main>
 
       <!--Герой-->
@@ -83,7 +93,7 @@
             </div>
             <h3 class="features__subtitle">Пунктуальность</h3>
             <p class="features__text">
-              Задача организации, в особенности же рамки и место обучения кадров
+              Задача организации,в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
             
@@ -409,5 +419,6 @@
       </div>
       
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
