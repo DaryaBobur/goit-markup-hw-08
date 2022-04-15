@@ -2,21 +2,20 @@
     @extend %list;
     @extend %flex;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
     margin-bottom: 60px;
     }
 }
 
 
 
-// .footer-socials__item {
-//     margin-right: 93px;
+.footer-socials__item {
+    // margin-right: 93px;
 
-// &:not(:last-child) {
-//   margin-right: 10px;
-//     }
-// }
-
+&:not(:last-child) {
+    margin-right: 10px;
+}
+}
 .footer-socials__link {
     @extend %flex;
 
@@ -31,7 +30,9 @@
     &:hover,
     &:focus {
     background-color: $accent-color;
-}
+
+    }
+
 }
 
 .footer-socials__subtitle {

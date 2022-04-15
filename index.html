@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,8 +28,7 @@
             <button type="button" class="menu-button" data-menu-button>
               <svg class="menu-button__icons" width="40" height="40">
                 <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
-                <use class="menu-button__icon-cross" href="./images/icons.svg#close-menu"></use>
-              </svg>
+                </svg>
             </button>
 
         <ul class="site-nav">
@@ -50,15 +49,41 @@
             <use href="./images/icons.svg#smartphone"></use></svg> +38 096 111 11 11</a>
         </li>
       </ul>
-      </div>
 
-      
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg class="menu-button__icons" width="40" height="40">
+            <use class="menu-button__icon-cross" href="./images/icons.svg#close-menu"></use>
+          </svg>
+        </button>
+        <ul class="menu-pages">
+          <li class="menu-pages__item"><a class="menu-pages__link menu-pages__link--current" href="./index.html">Студия</a></li>
+          <li class="menu-pages__item"><a class="menu-pages__link" href="./portfolio.html">Портфолио</a></li>
+          <li class="menu-pages__item"><a class="menu-pages__link" href="">Контакты</a></li>
+        </ul>
+        </nav>
+        
+        <ul class="menu-contacts">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="menu-socials">
+          <li class="menu-socials__item"><a class="menu-socials__link" href="">Instagram</a></li>
+          <li class="menu-socials__item"><a class="menu-socials__link" href="">Twitter</a></li>
+          <li class="menu-socials__item"><a class="menu-socials__link" href="">Facebook</a></li>
+          <li class="menu-socials__item"><a class="menu-socials__link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
+      </div>
     </header>
 
     <main>
-
       <!--Герой-->
-
       <section class="hero">
         <div>
          <h1 class="hero__title">

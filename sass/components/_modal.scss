@@ -3,8 +3,7 @@
     top: 50%;
     left: 50%;
     padding: 40px;
-    min-width: 528px;
-    min-height: 581px;
+    
     background-color: $primary-white-color;
     box-shadow: $box-shadow;
     border-radius: 4px;
@@ -12,6 +11,15 @@
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $cubic;
+
+    @media screen and (min-width: 480px) {
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+    }
 }
 
 .modal__title {
@@ -21,12 +29,22 @@
     line-height: 1.15;
     text-align: center;
     color: $secondary-color;
+
+@media screen and (max-width: 1199px) {
+    line-height: 1.5;
+}
+    
+
 }
 
 .form {
     width: 448px;
     margin-left: auto;
     margin-right: auto;
+
+        @media screen and (max-width: 1199px) {
+            width: 370px;
+        }
 }
 
 .form__input {
@@ -37,6 +55,7 @@
 }
     &:focus~.form__icon {
     fill: $accent-color;
+
 }
 }
 
@@ -55,6 +74,11 @@
         border-color: $accent-color;
     }
 
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.14;
+        
+    }
 }
 
 .form__field {
@@ -85,7 +109,14 @@
 
 .form__link-contract {
     color: $accent-color;
+    
+
+    @media screen and (max-width: 767px) {
+       margin-left: 2px;
+    }
+    @media screen and (min-width: 1200px) {
     margin-left: 4px;
+}
 }
 
 /* Оформление чекбокса */
@@ -113,6 +144,11 @@
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 .form__label-checkbox {
@@ -124,9 +160,17 @@
 
 .form__icon-checkbox {
     position: absolute;
+   
+    visibility: hidden;
+
+@media screen and (max-width: 767px) {
+    top: 0;
+    left: -1px;  
+}
+@media screen and (min-width: 1200px) {
     top: 4px;
     left: 10px;
-    visibility: hidden;
+}
 }
 
 .form__input-checkbox:checked+.form__checkbox-bgc {
