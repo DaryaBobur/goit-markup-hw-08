@@ -1,11 +1,18 @@
-// .form-footer__subscribe {
-//     @extend %flex;
-// }
+.form-footer__subscribe {
+
+    @media screen and (min-width: 1200px) {
+      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+}  
 
 .form-footer__subtitle {
 @extend %subtitle;
 color: $primary-white-color;
 margin-bottom: 20px;
+
 }
 
 .form-footer__input {
@@ -32,7 +39,12 @@ margin-bottom: 20px;
 .form-footer__input {
     @media screen and (max-width: 767px) {
         width: 100%;
+        margin-bottom: 20px;  
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
         margin-bottom: 20px;
-        
+
     }
 }
