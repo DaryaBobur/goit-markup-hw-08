@@ -18,14 +18,15 @@
 <body>
     <!-- Шапка сайта -->
 <header class="page-header">
-    <div class="container header-nav">
+    <div class="container header__container">
         <nav class="header-nav">
             <a class="logo" href="./index.html"><span class="logo__accent">Web</span><span
                     class="logo__name">Studio</span></a>
 
-                <button type="button" class="menu-button" data-menu-button>
-                    <svg class="menu-button__icons" width="40" height="40">
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+                    <svg class="menu-button__icons" width="40" height="40" aria-label="Открыть мобильное меню">
                         <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
+                        <use class="menu-button__icon-cross" href="./images/icons.svg#close-menu"></use>
                     </svg>
                 </button>
             <ul class="site-nav">
@@ -107,7 +108,15 @@
     <li class="portfolio__item"> 
         <a class="portfolio__link" href="">
             <div class="portfolio__thumb">
-          <img class="portfolio__picture" src="./images/techokryak.jpg" alt="Фото команды специалистов" width="370" height="294">
+                <picture>
+                    <source srcset="./images/portfolio/technokryak-mobile.jpg 1x, ./images/portfolio/technokryak-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/portfolio/technokryak-tablet.jpg 1x, ./images/portfolio/technokryak-tablet@2x.jpg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/portfolio/technokryak-desktop.jpg 1x, ./images/portfolio/technokryak-desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <img class="portfolio__picture" src="./images/techokryak.jpg" alt="Фото команды специалистов">
+                </picture>
+        
           <div class="portfolio__description">
           <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
             позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -123,7 +132,16 @@
     <li class="portfolio__item">
         <a class="portfolio__link" href="">
             <div class="portfolio__thumb">
-         <img class="portfolio__picture" src="./images/poster.jpg" alt="Баскетболист пытается забрать мяч у противника" width="370" height="294">
+        <picture>
+            <source srcset="./images/portfolio/poster-mobile.jpg 1x, ./images/portfolio/poster-mobile@2x.jpg 2x"
+                media="(max-width: 767px)" />
+            <source srcset="./images/portfolio/poster-tablet.jpg 1x, ./images/portfolio/poster-tablet@2x.jpg 2x"
+                media="(min-width: 768px) and (max-width: 1199px)" />
+            <source srcset="./images/portfolio/poster-desktop.jpg 1x, ./images/portfolio/poster-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+            <img class="portfolio__picture" src="./images/poster.jpg" alt="Баскетболист пытается забрать мяч у противника">
+        </picture>
+        
         <div class="portfolio__description">
          <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
             позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -139,7 +157,16 @@
     <li class="portfolio__item">
          <a class="portfolio__link" href="">
             <div class="portfolio__thumb">
-          <img class="portfolio__picture" src="./images/seafood.jpg" alt="Логотип ресторана" width="370" height="294">
+                <picture>
+                    <source srcset="./images/portfolio/seafood-mobile.jpg 1x, ./images/portfolio/seafood-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <source srcset="./images/portfolio/seafood-tablet.jpg 1x, ./images/portfolio/seafood-tablet@2x.jpg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/portfolio/seafood-desktop.jpg 1x, ./images/portfolio/seafood-desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <img class="portfolio__picture" src="./images/seafood.jpg" alt="Логотип ресторана">
+                </picture>
+
         <div class="portfolio__description">
           <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
             позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -155,7 +182,17 @@
     <li class="portfolio__item">
        <a class="portfolio__link" href="">
         <div class="portfolio__thumb">
-           <img class="portfolio__picture" src="./images/prime.jpg" alt="Наушники" width="370" height="294">
+
+            <picture>
+                <source srcset="./images/portfolio/prime-mobile.jpg 1x, ./images/portfolio/prime-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+                <source srcset="./images/portfolio/prime-tablet.jpg 1x, ./images/portfolio/prime-tablet@2x.jpg 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/portfolio/prime-desktop.jpg 1x, ./images/portfolio/prime-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                <img class="portfolio__picture" src="./images/prime.jpg" alt="Наушники">
+            </picture>
+
     <div class="portfolio__description">
            <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -171,7 +208,17 @@
     <li class="portfolio__item">
        <a class="portfolio__link" href="">
             <div class="portfolio__thumb">
-           <img class="portfolio__picture" src="./images/boxes.jpg" alt="Две коробки белая и коричневая" width="370" height="294">
+
+                <picture>
+                    <source srcset="./images/portfolio/boxes-mobile.jpg 1x, ./images/portfolio/boxes-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <source srcset="./images/portfolio/boxes-tablet.jpg 1x, ./images/portfolio/boxes-tablet@2x.jpg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/portfolio/boxes-desktop.jpg 1x, ./images/portfolio/boxes-desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <img class="portfolio__picture" src="./images/boxes.jpg" alt="Две коробки белая и коричневая">
+                </picture>
+
     <div class="portfolio__description">
            <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -187,7 +234,17 @@
     <li class="portfolio__item">
        <a class="portfolio__link" href="">
         <div class="portfolio__thumb">
-        <img class="portfolio__picture" src="./images/inspiration.jpg" alt="Монитор компьютера" width="370" height="294">
+
+            <picture>
+                <source srcset="./images/portfolio/inspiration-mobile.jpg 1x, ./images/portfolio/inspiration-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+                <source srcset="./images/portfolio/inspiration-tablet.jpg 1x, ./images/portfolio/inspiration-tablet@2x.jpg 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/portfolio/inspiration-desktop.jpg 1x, ./images/portfolio/inspiration-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                <img class="portfolio__picture" src="./images/inspiration.jpg" alt="Монитор компьютера">
+            </picture>
+
         <div class="portfolio__description">
         <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
             позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -203,7 +260,17 @@
     <li class="portfolio__item">
       <a class="portfolio__link" href="">
         <div class="portfolio__thumb">
-    <img class="portfolio__picture" src="./images/edition.jpg" alt="Разворот журнала ограниченного тиража" width="370" height="294">
+
+            <picture>
+            <source srcset="./images/portfolio/edition-mobile.jpg 1x, ./images/portfolio/edition-mobile@2x.jpg 2x"
+                media="(max-width: 767px)" />
+            <source srcset="./images/portfolio/edition-tablet.jpg 1x, ./images/portfolio/edition-tablet@2x.jpg 2x"
+                media="(min-width: 768px) and (max-width: 1199px)" />
+            <source srcset="./images/portfolio/edition-desktop.jpg 1x, ./images/portfolio/edition-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+            <img class="portfolio__picture" src="./images/edition.jpg" alt="Разворот журнала ограниченного тиража">
+            </picture>
+   
     <div class="portfolio__description">
     <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -219,7 +286,17 @@
     <li class="portfolio__item">
          <a class="portfolio__link" href="">
         <div class="portfolio__thumb">
-          <img class="portfolio__picture" src="./images/lab.jpg" alt="Бирка с названием проекта" width="370" height="294">
+
+            <picture>
+                <source srcset="./images/portfolio/lab-mobile.jpg 1x, ./images/portfolio/lab-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+                <source srcset="./images/portfolio/lab-tablet.jpg 1x, ./images/portfolio/lab-tablet@2x.jpg 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/portfolio/lab-desktop.jpg 1x, ./images/portfolio/lab-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                <img class="portfolio__picture" src="./images/lab.jpg" alt="Бирка с названием проекта">
+            </picture>
+
           <div class="portfolio__description">
           <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
             позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -235,8 +312,17 @@
     <li class="portfolio__item">
        <a class="portfolio__link" href="">
             <div class="portfolio__thumb">
-           <img class="portfolio__picture" src="./images/business.jpg" alt="Работа с ноутбуком" width="370" height="294">
-    <div class="portfolio__description">
+                <picture>
+                    <source srcset="./images/portfolio/business-mobile.jpg 1x, ./images/portfolio/business-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <source srcset="./images/portfolio/business-tablet.jpg 1x, ./images/portfolio/business-tablet@2x.jpg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/portfolio/business-desktop.jpg 1x, ./images/portfolio/business-desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <img class="portfolio__picture" src="./images/business.jpg" alt="Работа с ноутбуком">
+                </picture>
+
+           <div class="portfolio__description">
            <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>

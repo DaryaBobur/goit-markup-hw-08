@@ -4,16 +4,17 @@
 
     background-color: $color-bg;
 
-    // &__container {
-    //     display: flex;
-    //     align-items: baseline;
-    // }
 }
 
 .footer__container {
 
     @media screen and (max-width: 1199px) {
         text-align: center; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
     }
 }
 

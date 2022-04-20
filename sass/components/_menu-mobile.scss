@@ -1,7 +1,11 @@
 .mobile-menu {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 20px;
+    padding: 48px 40px;
+   
+
+    @media screen and (max-width: 400px) {
+    padding: 48px 10px;
+    }
+
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -11,12 +15,11 @@
         width: 100%;
         box-shadow: $box-shadow-menu;
         background-color: $primary-white-color;
-            z-index: 999;
+        z-index: 98;
 
     
         &.is-open {
             display: block;
-    
         }
         }
 
@@ -24,8 +27,6 @@
         display: none;
     }
 }
-
-
 
 .menu-pages, 
 .menu-contacts,
@@ -96,6 +97,7 @@
 .menu-socials {
    
     display: inline-flex;
+    flex-wrap: wrap
 }
 
 .menu-socials__link {
@@ -117,7 +119,7 @@ color: $accent-color;
         display: block;
         width: 1px;
         height: 22px;
-        background-color: rgba(33, 33, 33, 0.2);
+        background-color: $line-color;
         margin-left: 10px; 
 }
 }

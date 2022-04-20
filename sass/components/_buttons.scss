@@ -77,26 +77,25 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    
+    z-index: 99;
     @media screen and (min-width: 768px) {
         display: none;
     }
 
-    //  &.is-open .menu-button__icon-cross {
-    //  display: block;
-    // }
+     &.is-open .menu-button__icon-cross {
+     display: block;
+    }
 
     &.is-open .menu-button__icon-menu {
         display: none;
     }
 }
 
-// .menu-button__icon-cross {
-//     display: none;
-// }
+.menu-button__icon-cross {
+    display: none;
+}
 
 .menu-button {
-
 
     &:hover,
     &:focus {
@@ -110,4 +109,3 @@
     right: 15px;
   
 }
-

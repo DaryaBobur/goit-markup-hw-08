@@ -25,10 +25,15 @@
           ><span class="logo__accent">Web</span
           ><span class="logo__name">Studio</span></a>
 
-            <button type="button" class="menu-button" data-menu-button>
-              <svg class="menu-button__icons" width="40" height="40">
+            <button type="button" 
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+             data-menu-button>
+              <svg class="menu-button__icons" width="40" height="40" aria-label="Открыть мобильное меню">
                 <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
-                </svg>
+                <use class="menu-button__icon-cross" href="./images/icons.svg#close-menu"></use>
+              </svg>
             </button>
 
         <ul class="site-nav">
@@ -50,12 +55,8 @@
         </li>
       </ul>
 
-      <div class="mobile-menu" data-menu>
-        <button type="button" class="menu-button" data-menu-button>
-          <svg class="menu-button__icons" width="40" height="40">
-            <use class="menu-button__icon-cross" href="./images/icons.svg#close-menu"></use>
-          </svg>
-        </button>
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+
         <ul class="menu-pages">
           <li class="menu-pages__item"><a class="menu-pages__link menu-pages__link--current" href="./index.html">Студия</a></li>
           <li class="menu-pages__item"><a class="menu-pages__link" href="./portfolio.html">Портфолио</a></li>
@@ -159,6 +160,9 @@
         <ul class="works__list">
           <li class="works__item">
             <img class="works__images"
+            srcset="./images/computer-370.jpg 1x,
+            ./images/computer-740.jpg 2x
+            "
               src="./images/computer.jpg"
               alt="Работа с компьютером"
               width="370"
@@ -170,6 +174,9 @@
           </li>
           <li class="works__item">
             <img class="works__images"
+            srcset="./images/phone-370.jpg 1x,
+            ./images/phone-740.jpg 2x
+            "
               src="./images/phone.jpg"
               alt="Работа с телефоном"
               width="370"
@@ -181,6 +188,9 @@
           </li>
           <li class="works__item">
             <img class="works__images"
+            srcset="./images/mapcase-370.jpg 1x,
+            ./images/mapcase-740.jpg 2x
+            "
               src="./images/mapcase.jpg"
               alt="Работа с планшетом"
               width="370"
@@ -199,12 +209,13 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__members">
           <li class="team__item">
-            <img class="team__photo"
-              src="./images/ihor.jpg"
-              alt="фото Игоря Демьяненка"
-              width="270"
-              height="260"
-            />
+              <picture>
+                <source srcset="./images/team/ihor-mobile.jpg 1x, ./images/team/ihor-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./images/team/ihor-tablet.jpg 1x, ./images/team/ihor-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/team/ihor-desktop.jpg 1x, ./images/team/ihor-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img class="team__photo" src="./images/ihor.jpg" alt="фото Игоря Демьяненка">
+              </picture>
+           
             <div class="team__desc">
             <h3 class="team__name">Игорь Демьяненко</h3>
             <p class="team__text">Product Designer</p>
@@ -227,12 +238,16 @@
           </li>
 
           <li class="team__item">
-             <img class="team__photo"
-              src="./images/olga.jpg"
-              alt="фото Ольги Репиной"
-              width="270"
-              height="260"
-            />
+
+            <picture>
+              <source srcset="./images/team/olga-mobile.jpg 1x, ./images/team/olga-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+              <source srcset="./images/team/olga-tablet.jpg 1x, ./images/team/olga-tablet@2x.jpg 2x"
+                media="(min-width: 768px) and (max-width: 1199px)" />
+              <source srcset="./images/team/olga-desktop.jpg 1x, ./images/team/olga-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="team__photo" src="./images/olga.jpg" alt="фото Ольги Репиной">
+            </picture>
+           
             <div class="team__desc">
             <h3 class="team__name">Ольга Репина</h3>
             <p class="team__text">Frontend Developer</p>
@@ -255,12 +270,15 @@
           </li>
 
           <li class="team__item">
-            <img class="team__photo"
-              src="./images/nikolay.jpg"
-              alt="фото Николая Тарасова"
-              width="270"
-              height="260"
-            />
+          <picture>
+            <source srcset="./images/team/nikolay-mobile.jpg 1x, ./images/team/nikolay-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+            <source srcset="./images/team/nikolay-tablet.jpg 1x, ./images/team/nikolay-tablet@2x.jpg 2x"
+              media="(min-width: 768px) and (max-width: 1199px)" />
+            <source srcset="./images/team/nikolay-desktop.jpg 1x, ./images/team/nikolay-desktop@2x.jpg 2x"
+              media="(min-width: 1200px)" />
+            <img class="team__photo" src="./images/nikolay.jpg" alt="фото Николая Тарасова">
+          </picture>
+
             <div class="team__desc">
             <h3 class="team__name">Николай Тарасов</h3>
             <p class="team__text">Marketing</p>
@@ -283,12 +301,16 @@
           </li>
 
           <li class="team__item">
-            <img class="team__photo"
-              src="./images/michael.jpg"
-              alt="фото Михаила Ермакова"
-              width="270"
-              height="260"
-            />
+            <picture>
+              <source srcset="./images/team/michael-mobile.jpg 1x, ./images/team/michael-mobile@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source srcset="./images/team/michael-tablet.jpg 1x, ./images/team/michael-tablet@2x.jpg 2x"
+                media="(min-width: 768px) and (max-width: 1199px)" />
+              <source srcset="./images/team/michael-desktop.jpg 1x, ./images/team/michael-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="team__photo" src="./images/michael.jpg" alt="фото Михаила Ермакова">
+            </picture>
+            
             <div class="team__desc">
             <h3 class="team__name">Михаил Ермаков</h3>
             <p class="team__text">UI Designer</p>

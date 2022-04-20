@@ -14,13 +14,15 @@
 }
 
 
-.contacts__item{
-  margin-left: 84px;
-
+.contacts__item {
+  
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+margin-left: 84px;
+}
 
 &:not(:last-child) {
-  @media screen and (min-width: 768px) {
-    margin-left: 84px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 
@@ -32,9 +34,6 @@
 
 .contacts__link {
   @extend %header-link;
-
- 
- 
 
   color: $primary-text-color;
 
@@ -57,6 +56,9 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.14;
+  
 }
 
 }

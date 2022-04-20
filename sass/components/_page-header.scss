@@ -1,7 +1,5 @@
 .page-header {
     border-bottom: 1px solid $color-border-header;
-
-    position: relative;
 }
 
     .header-nav {
@@ -10,18 +8,13 @@
     align-items: center;
         
     @media screen and (max-width: 767px) {
-
-    
     justify-content: space-between;
 }
-
-    // @media screen and (min-width: 768px) {
-
-    // }
 
     }
 
 .header__container {
+    position: relative;
     @media screen and (min-width: 768px) {
        display: flex;
        align-items: center; 
