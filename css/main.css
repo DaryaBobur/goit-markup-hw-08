@@ -1650,6 +1650,7 @@ ul {
   .mobile-menu {
     display: none;
     position: absolute;
+    overflow-y: scroll;
     top: 0px;
     left: 0;
     width: 100%;
