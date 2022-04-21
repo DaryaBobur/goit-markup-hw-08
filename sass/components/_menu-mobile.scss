@@ -22,6 +22,7 @@
         &.is-open {
             display: block;
             position: fixed;
+            height: 100vh;
         }
         }
 
@@ -106,7 +107,7 @@
 line-height: 1.22;  
 color: $accent-color;
 
-@media screen and (max-width: 380px ) {
+@media screen and (max-width: 479px ) {
     font-size: 14px;
 }
 }
