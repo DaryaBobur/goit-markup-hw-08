@@ -123,6 +123,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -1650,7 +1658,6 @@ ul {
   .mobile-menu {
     display: none;
     position: absolute;
-    overflow-y: scroll;
     top: 0px;
     left: 0;
     width: 100%;
